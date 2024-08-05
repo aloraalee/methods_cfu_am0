@@ -39,6 +39,17 @@
 # https://ruby-doc.org/core-3.1.0/String.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+email = "hi@gmail.com"
+game = "Trial by Trolly"
+
+#The method eql? checks to see if the string is equal to the argument provided. 
+#It can be true or false. 
+email.eql? ("hi@gmail.com")
+
+# The method start_with checkes to see if a string starts with the argument given. 
+#It can be true or false. 
+game.start_with? ("T")
+
 # EXAMPLE
 # The start_with? method is called on the first_name variable, which stores the string object "Jeff". 
 # The start_with? method returns true if the data in the first_name variable starts with the argument passed in.
@@ -55,6 +66,14 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+age = 29
+sqrt_feet_apt = 724.7
+
+#The method round will give a return number that is rounded to the nearest whole number. 
+sqrt_feet_apt.round
+
+#The succ method will print the number next in succession. 
+age.succ
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
@@ -62,3 +81,13 @@ puts first_name.start_with?("J")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+cities_lived_in = ["Denver", "Portland", "Boulder", "Paris", "New Orleans", "Detroit"]
+grades = [4.0, 3.5, 4.0, 3.75]
+
+#The method none determines if the given argument can be found in the array. 
+#It will be true if it is not found in the array. 
+cities_lived_in.none?("Dallas")
+
+#The method sum will calculate the sum of the elements in the array. 
+grades.sum
