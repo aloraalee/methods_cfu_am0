@@ -8,19 +8,27 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+#The include? method is called on the string object "Hello World"
+#include? will identify if the characters in the argument "Hello" are present in the string "Hello World."
+#Since they are, the return is true. 
 "Hello World".include?("Hello")
 
-
+#The end_with? method is called on the string object "Hello World"
+#end_with? will identify if the characters in the argument "Hello" are at the end of the string. 
+#Since they are not, the return is false. 
 "Hello World".end_with?("Hello")
 
-
+#In this example "Hello World" ends with "rld" so the return is true.
 "Hello World".end_with?("rld")
 
-
+#The even? method is called on the integer 12. 
+#even? will identify if the given integer is divisible by 2. 
+#Since 12 is divisible by 2, the return will be true. 
 12.even?
 
-
+#The next method is called on the integer 18.
+# next will count up to the next integer from the integer given. 
+#Since the next number after 18 is 19, 19 is the return. 
 18.next
 
 
